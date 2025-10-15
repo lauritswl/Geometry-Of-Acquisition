@@ -1,0 +1,9 @@
+README.md
+main.py
+pyproject.toml
+geometryofacquisition.egg-info/PKG-INFO
+geometryofacquisition.egg-info/SOURCES.txt
+geometryofacquisition.egg-info/dependency_links.txt
+geometryofacquisition.egg-info/entry_points.txt
+geometryofacquisition.egg-info/requires.txt
+geometryofacquisition.egg-info/top_level.txt
