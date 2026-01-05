@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/embedder.py
+src/vector.py
+src/geometryofacquisition.egg-info/PKG-INFO
+src/geometryofacquisition.egg-info/SOURCES.txt
+src/geometryofacquisition.egg-info/dependency_links.txt
+src/geometryofacquisition.egg-info/entry_points.txt
+src/geometryofacquisition.egg-info/requires.txt
+src/geometryofacquisition.egg-info/top_level.txt
