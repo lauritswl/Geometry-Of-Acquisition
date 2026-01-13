@@ -1,3 +1,3 @@
 # Dont push model files but keep the folders
-models/*
-!models/.gitkeep
+models/embeddinggemma-300m/*
+!models/embeddinggemma-300m/.gitkeep
