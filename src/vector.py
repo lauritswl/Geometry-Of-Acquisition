@@ -38,6 +38,13 @@ class ConceptVector:
         if arr.ndim != 2:
             raise ValueError("Embeddings must be 1D or 2D array-like")
         return arr
+    def normalize_vector(self):
+        """L2-normalize the concept vector in place."""
+        if self.vector is None:
+            raise RuntimeError("Concept vector not set. Call fit() first.")
+        norm = np.linalg.norm(self.vector)
+        if norm > 0:
+            self.vector = self.vector / norm
 
     def fit(self, src_embeddings, tgt_embeddings):
         """
@@ -55,14 +62,13 @@ class ConceptVector:
         self.dim = src.shape[1]
         self.src_mean = src.mean(axis=0)
         self.tgt_mean = tgt.mean(axis=0)
-
-        vec = self.tgt_mean - self.src_mean 
-        if self.normalize:
-            self.original_vector = vec
-            norm = np.linalg.norm(vec)
-            if norm > 0:
-                vec = vec / norm
+        if self.src_mean is None or self.tgt_mean is None:
+            raise RuntimeError("Source/target means not computed.")
+        vec = self.tgt_mean - self.src_mean
+        self.original_vector = vec
         self.vector = vec
+        if self.normalize:
+            self.normalize_vector()
         return self
 
     def project(self, embeddings):

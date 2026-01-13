@@ -16,6 +16,8 @@ dependencies = [
     "torch>=2.8.0",
     "transformers>=4.56.2",
     "ipython>=9.6.0",
+    "huggingface-hub>=0.35.3",
+    "kagglehub>=0.3.13",
 ]
 
 
