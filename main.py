@@ -1,9 +1,4 @@
 # %%
-# Flags:
-# Chose to fit model or load local model
-load_local = 1
-
-# %%
 import torch
 import pandas as pd
 from src.embedder import Embedder
@@ -124,7 +119,7 @@ projections = prof_CV.project(test_embeddings.numpy())
 
 
 # %%
- Show kernel density estimate of projections colored by label
+
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd

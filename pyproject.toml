@@ -18,6 +18,7 @@ dependencies = [
     "ipython>=9.6.0",
     "huggingface-hub>=0.35.3",
     "kagglehub>=0.3.13",
+    "mord>=0.7",
 ]
 
 

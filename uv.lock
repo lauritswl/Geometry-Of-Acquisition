@@ -506,6 +506,7 @@ dependencies = [
     { name = "ipython" },
     { name = "kagglehub" },
     { name = "matplotlib" },
+    { name = "mord" },
     { name = "numpy" },
     { name = "pandas" },
     { name = "scikit-learn" },
@@ -522,6 +523,7 @@ requires-dist = [
     { name = "ipython", specifier = ">=9.6.0" },
     { name = "kagglehub", specifier = ">=0.3.13" },
     { name = "matplotlib", specifier = ">=3.10.6" },
+    { name = "mord", specifier = ">=0.7" },
     { name = "numpy", specifier = ">=2.3.3" },
     { name = "pandas", specifier = ">=2.3.3" },
     { name = "scikit-learn", specifier = ">=1.7.2" },
@@ -892,6 +894,12 @@ sdist = { url = "https://files.pythonhosted.org/packages/99/5b/a36a337438a14116b
 wheels = [
     { url = "https://files.pythonhosted.org/packages/8f/8e/9ad090d3553c280a8060fbf6e24dc1c0c29704ee7d1c372f0c174aa59285/matplotlib_inline-0.1.7-py3-none-any.whl", hash = "sha256:df192d39a4ff8f21b1895d72e6a13f5fcc5099f00fa84384e0ea28c2cc0653ca", size = 9899, upload-time = "2024-04-15T13:44:43.265Z" },
 ]
+
+[[package]]
+name = "mord"
+version = "0.7"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/76/31/409cc737a998829d28e1dff5850d5a8c8263634fb6671def6b0566558433/mord-0.7.tar.gz", hash = "sha256:b60002734e33ca7fad9f94999c70b27fe038eb069cbd0fb08d6027c3d34a7bb3", size = 8634, upload-time = "2023-05-26T11:51:49.755Z" }
 
 [[package]]
 name = "mpmath"
