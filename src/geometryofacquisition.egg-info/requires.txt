@@ -8,3 +8,6 @@ scikit-learn>=1.7.2
 torch>=2.8.0
 transformers>=4.56.2
 ipython>=9.6.0
+huggingface-hub>=0.35.3
+kagglehub>=0.3.13
+mord>=0.7

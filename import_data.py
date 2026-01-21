@@ -62,13 +62,13 @@ print(df_all.groupby("lang")["cefr_level"].value_counts().unstack().fillna(0))
 # %%
 # Create a test/train split (80/20) stratified by cefr_level
 from sklearn.model_selection import train_test_split
-train_df, test_df = train_test_split(df_all, test_size=0.05, stratify=df_all["cefr_level"], random_state=89)
+train_df, test_df = train_test_split(df_all, test_size=0.2, stratify=df_all["cefr_level"], random_state=89)
 print(f"Training set size: {len(train_df)}, Test set size: {len(test_df)}")
 
 
 # %%
 # Save cleaned combined DataFrame to a CSV file
-train_df.to_csv("data/train_cefr_dataset.csv", index=False)
-test_df.to_csv("data/test_cefr_dataset.csv", index=False)
+train_df.to_csv("/work/Code/Geometry-Of-Acquisition/data/train_cefr_dataset.csv", index=False)
+test_df.to_csv("/work/Code/Geometry-Of-Acquisition/data/test_cefr_dataset.csv", index=False)
 
 # %%
